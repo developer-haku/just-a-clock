@@ -1,0 +1,25 @@
+.buttons {
+  position: fixed;
+  right: 0;
+  bottom: 5%;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}

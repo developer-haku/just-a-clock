@@ -1,0 +1,30 @@
+.clock {
+  font-family: "Roboto";
+  color: white;
+  user-select: none;
+}
+
+.mainTime {
+  font-size: 18vw;
+  margin: 5vh 4vw 0 0;
+  text-align: center;
+}
+
+.mainTimeMore {
+  font-size: 6.25vw;
+  width: 6.25vw;
+  display: inline-block;
+}
+
+.mainTimeMore span {
+  display: inline-block;
+  width: 6.25vw;
+  text-align: left;
+}
+
+.mainDate {
+  font-size: 4vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0vh 8vw;
+}
