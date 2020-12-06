@@ -1,0 +1,18 @@
+.Swapper {
+    color: white;
+    margin-left: 10%;
+    padding: 20px 0;
+    position: relative;
+}
+
+.label, .selections {
+    position: absolute;
+}
+
+.label {
+    line-height: 20px;
+}
+
+.selections {
+    margin-left: 20%;
+}

@@ -18,10 +18,14 @@ export const decodeConfig = (str) => {
         day: mainClock[2] === "9" ? false : configs.day[mainClock[2]].token,
         week: mainClock[3] === "9" ? false : configs.week[mainClock[3]].token,
         hour: mainClock[4] === "9" ? false : configs.hour[mainClock[4]].token,
-        minute: mainClock[5] === "9" ? false : configs.minute[mainClock[5]].token,
-        second: mainClock[6] === "9" ? false : configs.second[mainClock[6]].token,
+        minute:
+          mainClock[5] === "9" ? false : configs.minute[mainClock[5]].token,
+        second:
+          mainClock[6] === "9" ? false : configs.second[mainClock[6]].token,
         millisecond:
-          mainClock[7] === "9" ? false : configs.millisecond[mainClock[7]].token,
+          mainClock[7] === "9"
+            ? false
+            : configs.millisecond[mainClock[7]].token,
         ampm: mainClock[8] === "9" ? false : configs.ampm[mainClock[8]].token,
       },
       sub: {
@@ -30,16 +34,20 @@ export const decodeConfig = (str) => {
         day: mainClock[2] === "9" ? false : configs.day[subClocks[2]].token,
         week: mainClock[3] === "9" ? false : configs.week[subClocks[3]].token,
         hour: mainClock[4] === "9" ? false : configs.hour[subClocks[4]].token,
-        minute: mainClock[5] === "9" ? false : configs.minute[subClocks[5]].token,
-        second: mainClock[6] === "9" ? false : configs.second[subClocks[6]].token,
+        minute:
+          mainClock[5] === "9" ? false : configs.minute[subClocks[5]].token,
+        second:
+          mainClock[6] === "9" ? false : configs.second[subClocks[6]].token,
         millisecond:
-          mainClock[7] === "9" ? false : configs.millisecond[subClocks[7]].token,
+          mainClock[7] === "9"
+            ? false
+            : configs.millisecond[subClocks[7]].token,
         ampm: mainClock[8] === "9" ? false : configs.ampm[subClocks[8]].token,
       },
     },
     tz: {
       main: moment.tz.names()[mainTz],
-      sub: subTzs.map(t => moment.tz.names()[t]),
+      sub: subTzs.map((t) => moment.tz.names()[parseInt(t)]),
     },
   };
 };
